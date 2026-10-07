@@ -13,6 +13,7 @@ def main():
         description="Print the lines of a file that contain a given pattern.")
     parser.add_argument("pattern", help="the text to look for")
     parser.add_argument("filename", help="the file to search")
+    # TODO: add an optional flag -i / --ignore-case  (use action="store_true")
     parser.add_argument('-i', '--ignore-case', action='store_true',help='Case insenitive counting')
     args = parser.parse_args()
 
